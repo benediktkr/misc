@@ -2,7 +2,7 @@
 
 ## Howto
 
-1. Use `extern` in C++ files
+1. Declare functions you want to test as `extern` in the C++ header files
 
     ```c
     extern "C" int addNum(int, int);
