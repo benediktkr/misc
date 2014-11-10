@@ -39,7 +39,7 @@ prop_c_addNum x y = x+y == c_addNum x y
 
 4. Start ghci with `-lstdc++`
 
-```haskell
+```
 $ ghci -lstdc++ addnum.o
 ..
 Loading object (static) addnum.o ... done
