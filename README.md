@@ -1,7 +1,7 @@
 Benedikt 
 =====
 
-Misc scripts and programs that don't belong in their own repo
+References for myself
 
 Dirs 
 ----
