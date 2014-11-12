@@ -13,8 +13,7 @@ prop_revapp xs ys = reverse (xs++ys) == reverse ys ++ reverse xs
 
 -- Talking to a C++ program
 instance Arbitrary CInt where
-    arbitrary = choose (-1000,1000)
---newtype CIntT = CUIntT Int deriving (Arbitrary,Eq,Num,Show)
+    arbitrary = fmap CInt arbitrary
 
 foreign import ccall "qc_testables.h addNum"
     c_addNum :: CInt -> CInt -> CInt

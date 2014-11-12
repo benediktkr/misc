@@ -27,7 +27,7 @@
     import Foreign.C.Types
 
     instance Arbitrary CInt where
-        arbitrary = choose (-1000,1000)
+        arbitrary = fmap CInt arbitrary
     
     
     foreign import ccall "addnum.h addNum"
